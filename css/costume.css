@@ -1,0 +1,87 @@
+/*transition for cards image scale*/
+.imgc{
+    transition: all 1s;
+}
+
+.imgc:hover{
+    transform: scale(1.05);
+}
+
+.highone{
+    height: 3%;
+}
+
+.card{
+    transition: all 1s ease;
+}
+
+/*rotate the cards*/
+.cardrot{
+    transform: rotateY(85deg);
+}
+
+.parallax{
+    box-sizing: border-box;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(110%);    
+}
+
+.effec{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,rgba(44,44,44,.2),rgba(224,23,3,.6));;
+}
+
+.it{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px;
+}
+
+
+.ull{
+    position: relative;
+    padding: 0%;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    width: 70%;
+    font-family: "Ubuntu";
+
+}
+
+.ull .lil{
+    display: inline;
+    margin-right: 0;
+    color:rgba(255, 255, 253, 0.8);
+    font-size: 70pt;
+    transition: all 1s;
+}
+
+.ull .lil:hover{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.high{
+    animation: animate 0.9s linear;
+    height: 100%;
+}
+
+@keyframes animate{
+    0% {height: 3%;}
+    50%{height: 50%;}
+    100%{height: 100%;}
+}
